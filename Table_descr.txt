@@ -1,0 +1,71 @@
+desc dailyreport;
+
+Name             Type         Nullable Default Comments            
+---------------- ------------ -------- ------- ------------------- 
+HOSTNAME         VARCHAR2(30)                                      
+ORASID           VARCHAR2(20)                                      
+REPDATE          DATE                  SYSDATE                     
+T1PROCESSES      FLOAT                 0                           
+T1SESSIONS       FLOAT                 0                           
+T1LOCKS          FLOAT                 0                           
+T1MAXROLLBACK    FLOAT                 0                           
+T2OVER10MIN      INTEGER               0                           
+T2MAX            FLOAT                 0                           
+T3OVER10MIN      INTEGER               0                           
+T3MAX            FLOAT                 0                           
+T4OVER1DAY       INTEGER               0                           
+T4MAX            FLOAT                 0       Days                
+T6PUBSYNINVALID  INTEGER               0                           
+T6USEROBJINVALID INTEGER               0                           
+T10UNEXTENDCOUNT INTEGER               0                           
+T12COMPLETED     NUMBER(1)             0       1-True, 0-False     
+T12DURATION      NUMBER                0       Duration in seconds 
+T13ARCHSIZE      FLOAT                 0                           
+T13FULLSIZE      FLOAT                 0                           
+REPORTSTATUS     NUMBER(18)            0                           
+T5DEADLOCK       INTEGER               0               
+
+SQL> desc dailyreportt7;
+Name           Type         Nullable Default Comments 
+-------------- ------------ -------- ------- -------- 
+HOSTNAME       VARCHAR2(30)                           
+ORASID         VARCHAR2(20)                           
+REPDATE        DATE                  SYSDATE          
+TABLESPACENAME VARCHAR2(30)                           
+MAXFREEPCT     FLOAT                 0      
+
+
+
+SQL> desc dailyreportt11;
+Name         Type         Nullable Default Comments        
+------------ ------------ -------- ------- --------------- 
+HOSTNAME     VARCHAR2(30)                                  
+ORASID       VARCHAR2(20)                                  
+REPDATE      DATE                  SYSDATE                 
+USERNAME     VARCHAR2(30)                                  
+RUNSTATUS    NUMBER(1)             0       1-True, 0-False 
+FAILURECOUNT INTEGER                                       
+ 
+ 
+ 
+ 
+ SQL> desc dailyreportt14;
+Name       Type         Nullable Default Comments 
+---------- ------------ -------- ------- -------- 
+HOSTNAME   VARCHAR2(30)                           
+ORASID     VARCHAR2(20)                           
+REPDATE    DATE                  SYSDATE          
+DRIVENAME  VARCHAR2(60)                           
+DRIVEDESCR VARCHAR2(30)                           
+FREEPERC   FLOAT                 0                
+ 
+ 
+ 
+ SQL> desc dailyreportusers;
+Name        Type         Nullable Default Comments 
+----------- ------------ -------- ------- -------- 
+HOSTNAME    VARCHAR2(30)                           
+ORASID      VARCHAR2(20)                           
+SCHEMA_USER VARCHAR2(20)                           
+
+
